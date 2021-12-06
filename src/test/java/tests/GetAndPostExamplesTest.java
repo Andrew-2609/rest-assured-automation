@@ -9,8 +9,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasItems;
 
-@SuppressWarnings("NewClassNamingConvention")
-public class GetAndPostExamples {
+public class GetAndPostExamplesTest {
 
     @Test
     public void getTest() {
