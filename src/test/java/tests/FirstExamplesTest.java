@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import static org.hamcrest.Matchers.equalTo;
 import static org.testng.Assert.assertEquals;
 
-public class TestExamples {
+public class FirstExamplesTest {
 
     @Test
     public void firstTest() {
