@@ -24,4 +24,11 @@ public class TestExamples {
         assertEquals(statusCode, 200);
     }
 
+    @Test
+    public void secondTest() {
+        given()
+                .get("https://reqres.in/api/users")
+                .then().statusCode(200);
+    }
+
 }
