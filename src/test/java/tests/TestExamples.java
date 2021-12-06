@@ -28,8 +28,7 @@ public class TestExamples {
     public void secondTest() {
         baseURI = "https://reqres.in/api";
 
-        given()
-                .get("/users?page=1")
+        given().get("/users?page=1")
                 .then().statusCode(200);
     }
 
