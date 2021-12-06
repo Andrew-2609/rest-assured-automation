@@ -47,4 +47,14 @@ public class PutPatchDeleteExamplesTest {
         ;
     }
 
+    @Test
+    public void deleteTest() {
+        baseURI = "https://reqres.in/api";
+
+        when().delete("/users/1")
+                .then()
+                .statusCode(204)
+        ;
+    }
+
 }
