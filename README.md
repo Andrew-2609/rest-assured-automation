@@ -17,3 +17,13 @@ if you want more info, I recommend you dive deep into the official [Documentatio
 I also recommend you search some courses about it. This basic project was made based on the
 course [REST Assured Java Framework | Step by Step for Beginners](https://www.udemy.com/course/rest-assured-java-framework-step-by-step-for-beginners/)
 .
+
+## How to run the project
+
+To run this project after cloning it, simply type `mvn test` in your shell (naturally, you need to
+have [Maven](https://maven.apache.org/download.cgi) installed and configured).
+
+If you are running it through an IDE, such as IntelliJ IDEA or Eclipse, you can run the tests easily by the IDE's
+interface.
+
+I hope you learned something new! Thanks!
