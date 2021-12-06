@@ -5,6 +5,7 @@ import static io.restassured.RestAssured.*;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
+import static org.hamcrest.Matchers.equalTo;
 import static org.testng.Assert.assertEquals;
 
 public class TestExamples {
@@ -29,7 +30,8 @@ public class TestExamples {
         baseURI = "https://reqres.in/api";
 
         given().get("/users?page=1")
-                .then().statusCode(200);
+                .then().statusCode(200).body("data[1].id", equalTo(2))
+        ;
     }
 
 }
