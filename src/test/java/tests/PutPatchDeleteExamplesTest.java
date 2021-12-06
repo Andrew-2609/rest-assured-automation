@@ -29,4 +29,22 @@ public class PutPatchDeleteExamplesTest {
         ;
     }
 
+    @Test
+    public void patchTest() {
+        JSONObject request = new JSONObject();
+        request.put("name", "Leandro");
+
+        baseURI = "https://reqres.in/api";
+
+        given().body(request.toString())
+                .contentType(ContentType.JSON).accept(ContentType.JSON)
+                .when()
+                .patch("/users/2")
+                .then()
+                .statusCode(200)
+                .body("name", equalTo("Leandro"))
+                .body("updatedAt", is(not(empty())))
+        ;
+    }
+
 }
